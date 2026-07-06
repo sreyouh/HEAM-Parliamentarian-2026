@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAM Parliamentarian 2026 Poster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        }
+
+        /* Glowing / glittering prize badge */
+        .prize-badge {
+            background: linear-gradient(120deg, #fff6c8 0%, #ffd700 25%, #ffb300 50%, #ffd700 75%, #fff6c8 100%);
+            background-size: 250% auto;
+            color: #7c2d12;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+            border: 1px solid rgba(255,215,0,0.9);
+            animation: prize-shine 3.5s linear infinite, prize-pulse 2s ease-in-out infinite;
+        }
+        @keyframes prize-shine {
+            to { background-position: -250% center; }
+        }
+        @keyframes prize-pulse {
+            0%, 100% { box-shadow: 0 0 6px rgba(255,193,7,0.55), 0 0 14px rgba(255,193,7,0.25); }
+            50% { box-shadow: 0 0 14px rgba(255,193,7,0.9), 0 0 28px rgba(255,193,7,0.5); }
+        }
+
+        /* Stylish icon badges for competitions */
+        .icon-badge {
+            width: 68px;
+            height: 68px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: #fff;
+        }
+        .quiz-badge {
+            background: linear-gradient(135deg, #60a5fa, #1e40af);
+            box-shadow: 0 6px 16px rgba(37,99,235,0.4);
+        }
+        .presentation-badge {
+            background: linear-gradient(135deg, #34d399, #047857);
+            box-shadow: 0 6px 16px rgba(5,150,105,0.4);
+        }
+        .debate-badge {
+            background: linear-gradient(135deg, #f87171, #b91c1c);
+            box-shadow: 0 6px 16px rgba(220,38,38,0.4);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 flex justify-center items-center min-h-screen">
+
+    <div class="max-w-5xl w-full bg-white shadow-2xl overflow-hidden relative">
+        
+        <!-- Header Section -->
+        <header class="gradient-bg text-white pt-8 pb-12 px-6 md:px-12 relative text-center">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+            
+            <div class="relative z-10 flex flex-col items-center">
+                <p class="text-sm md:text-base font-semibold tracking-widest uppercase mb-2 text-blue-200">National-Level Competition for XI & XII Students</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">HEAM Parliamentarian 2026</h1>
+                
+                <div class="bg-white text-blue-900 px-6 py-3 rounded-full font-bold text-lg md:text-xl shadow-lg mt-4 inline-block transform hover:scale-105 transition duration-300">
+                    <i class="fas fa-calendar-alt mr-2"></i> Date: 04/08/2026, Tuesday
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-0 relative">
+            
+            <!-- Left Column: Organizers & Logos -->
+            <div class="md:col-span-4 bg-gray-50 p-6 md:p-8 border-r border-gray-200">
+                <div class="text-center mb-8">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b pb-2">Organized By</h3>
+                    <img src="college.png" alt="St. John's College Logo" class="h-32 mx-auto mb-4 drop-shadow-md object-contain">
+                    <h2 class="font-bold text-xl text-blue-900">St. John’s College, Anchal</h2>
+                    <p class="text-sm mt-2 text-gray-600">Department of Chemistry, Innovation & Start-up Club</p>
+                    <p class="text-xs mt-3 italic text-gray-500">Re-accredited with 'A' grade by NAAC<br>Recognised for STAR college scheme by DBT, Govt. of India<br>Funded under DST FIST scheme, Govt. of India</p>
+                </div>
+
+                <div class="text-center mb-8">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b pb-2">In Association With</h3>
+                    <img src="university.png" alt="University of Kerala Logo" class="h-24 mx-auto mb-4 object-contain">
+                    <p class="text-sm font-semibold text-gray-700">Department of Chemistry & Centre for Renewable Energy<br>University of Kerala</p>
+                    
+                    <div class="flex justify-center items-center gap-4 mt-6">
+                        <span class="text-xl font-bold text-gray-400">&</span>
+                        <div class="text-center">
+                            <p class="text-xs font-bold text-gray-700 mb-2">Indian Association for Hydrogen Energy and Advanced Materials (IAHEAM)</p>
+                             <!-- Placeholder for IAHEAM logo if a good URL isn't available, using a badge icon for now -->
+                             <i class="fas fa-atom text-4xl text-blue-600"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b pb-2">Supported By</h3>
+                    <img src="startup.png" alt="Kerala Startup Mission Logo" class="h-20 mx-auto object-contain">
+                    <!-- <p class="text-sm font-semibold mt-2 text-gray-700">Kerala Start-up Mission</p> -->
+                </div>
+            </div>
+
+            <!-- Right Column: Details, Events, Program -->
+            <div class="md:col-span-8 p-6 md:p-10 relative">
+                
+                <!-- About Section -->
+                <div class="mb-10 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg shadow-sm">
+                    <h2 class="text-2xl font-bold mb-3 text-blue-900"><i class="fas fa-info-circle mr-2"></i>About the Event</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed font-semibold">
+                        A dynamic competition to create awareness about the <span class="text-blue-600">Necessity of Hydrogen, biofuels, and other renewable energy sources-based start-ups</span> in the Indian Scenario.
+                    </p>
+                    <p class="mt-4 text-sm text-gray-600 italic">
+                        <strong>Exclusively for school students studying in XI or XII (State, CBSE and ICSE).</strong>
+                    </p>
+                </div>
+
+                <!-- Competitions Grid -->
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center uppercase tracking-wide border-b-2 border-gray-200 inline-block px-4 pb-2 mx-auto w-full">Competitions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                    <!-- Quiz -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-md hover:shadow-xl transition relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 prize-badge text-xs font-bold px-2 py-1 rounded-bl-lg z-10">
+                            Prize: ₹3500
+                        </div>
+                        <div class="icon-badge quiz-badge mb-3 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-brain text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2 text-gray-800">Quiz</h3>
+                        <p class="text-xs text-gray-600 text-center">Topic: Renewable energy sources (hydrogen, solar, wind, geothermal, biofuels) and Renewable Energy Sources Based Start-ups.</p>
+                    </div>
+
+                    <!-- Idea Presentation -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-md hover:shadow-xl transition relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 prize-badge text-xs font-bold px-2 py-1 rounded-bl-lg z-10">
+                            Prize: ₹3500
+                        </div>
+                        <div class="icon-badge presentation-badge mb-3 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-rocket text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2 text-gray-800">Start-up Idea Presentation</h3>
+                        <p class="text-xs text-gray-600 text-center">Topic: Creation of new energy technologies based on renewable sources (e.g., renewable fuel-powered vehicles, replacing LPG, hydrogen/biofuel production, waste-to-energy).</p>
+                    </div>
+
+                    <!-- Debate -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-md hover:shadow-xl transition relative overflow-hidden group">
+                         <div class="absolute top-0 right-0 prize-badge text-xs font-bold px-2 py-1 rounded-bl-lg z-10">
+                            Prize: ₹3500
+                        </div>
+                        <div class="icon-badge debate-badge mb-3 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-gavel text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-center mb-2 text-gray-800">Debate</h3>
+                        <p class="text-xs text-gray-600 text-center">Topic: Necessity of Hydrogen, Biofuels and other Renewable Energy Sources Based Start-ups in Indian Scenario.</p>
+                    </div>
+                </div>
+
+                <!-- Registration Banner -->
+                 <div class="bg-gradient-to-r from-green-500 to-emerald-600 p-6 rounded-xl shadow-lg text-white text-center mb-10 transform hover:-translate-y-1 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Register Now!</h3>
+                    <p class="mb-4">No Registration Fee. Deadline: <span class="font-bold underline text-yellow-300">20/08/2026</span></p>
+                    <a href="https://forms.gle/CN7VcgT1U71gAPm29" target="_blank" class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-link mr-2"></i> Click Here for Registration Form
+                    </a>
+                </div>
+
+                <!-- Programme Schedule -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b-2 border-gray-200 pb-2"><i class="fas fa-clock text-blue-600 mr-2"></i>Programme Schedule</h2>
+                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200 text-sm">
+                        <ul class="space-y-3">
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:00 AM</span> <span>Introduction</span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:10 AM</span> <span><strong>Invited Talk – I:</strong> Career and Higher Education Opportunities after +2<br><em class="text-gray-600">Ms. Najuma Noushad, Integrated Ph.D. student, IISER Trivandrum.</em></span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:30 AM</span> <span><strong>Invited Talk – II:</strong> Renewable Energy Resources and renewable energy based career oppertunities<br><em class="text-gray-600">Dr. A. Anantha Krishnan, (Former- BS-MS student IISER Trivandrum, Project Scientist, SCTMIST, Trivandrum)</em></span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">10:00 AM</span> <span><strong>Students Parliament</strong><br><em class="text-gray-600">(Chair: Dr. K. Anoop Krishnan, Scientist, NCESS Trivandrum)</em></span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">12:00 PM</span> <span>Lunch and research lab visit</span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">12:45 PM</span> <span>Start-up idea presentation</span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">02:15 PM</span> <span>Quiz competition</span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">03:30 PM</span> <span>Summary, Prize distribution</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Guidelines -->
+                <div class="mb-10">
+                    <h2 class="text-xl font-bold mb-3 text-gray-800"><i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>Please Note</h2>
+                    <ul class="list-disc pl-5 text-gray-700 text-sm space-y-2 bg-orange-50 p-4 rounded-lg border border-orange-100">
+                        <li>The participants must be exclusively from XI or XII (State, CBSE and ICSE).</li>
+                        <li>Only one team (of two students) is allowed from a school for each competition — a school cannot send two teams for the same competition.</li>
+                        <li>Schools may register the same team for all three competitions or send a separate team for each competition.</li>
+                        <li>Debaters must speak exclusively on the topic. Countering infeasible ideas with justification is allowed.</li>
+                        <li>Winners adjudicated by juries will be named <strong>HEAM Parliamentarian 2026</strong>.</li>
+                        <li>All participants will receive a participation certificate.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section: Committees & Contacts -->
+        <footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Contacts -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-gray-700 pb-2">Contact Us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-globe w-5 text-blue-400"></i> <a href="http://www.iaheam.org" class="hover:text-white transition">www.iaheam.org</a></li>
+                        <li><i class="fas fa-envelope w-5 text-blue-400"></i> <a href="mailto:arunps@stjohns.ac.in" class="hover:text-white transition">arunps@stjohns.ac.in</a></li>
+                        <li class="mt-2"><i class="fas fa-phone w-5 text-green-400"></i> 9995767819 (Arun P.S.)</li>
+                        <li><i class="fas fa-phone w-5 text-green-400"></i> 9447455457 (Remya R. G.)</li>
+                        <li><i class="fas fa-phone w-5 text-green-400"></i> 9895443051 (Dr. Sunesh S M)</li>
+                    </ul>
+                    <div class="mt-6">
+                        <h4 class="text-md font-semibold text-white mb-2">Venue</h4>
+                        <p class="text-sm"><i class="fas fa-map-marker-alt text-red-400 mr-2"></i>St. John’s College, Anchal,<br>Kollam, Kerala</p>
+                    </div>
+                </div>
+
+                <!-- Theme Advisors -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-gray-700 pb-2">Theme Advisors / Coordinators</h3>
+                    <ul class="space-y-1 text-sm text-gray-400">
+                        <li>Dr. M. Shaneeth <span class="text-xs text-gray-500">(VSSC (ISRO) Trivandrum)</span></li>
+                        <li>Dr. Bipin Kumar Gupta <span class="text-xs text-gray-500">(NPL, New Delhi)</span></li>
+                        <li>Dr. Bibin John <span class="text-xs text-gray-500">(VSSC (ISRO) Trivandrum)</span></li>
+                        <li>Mr. Jayakrishnan B <span class="text-xs text-gray-500">(VSSC(ISRO)Trivandrum)</span></li>
+                        <li>Dr. K. Anoop Krishnan <span class="text-xs text-gray-500">(NCESS Trivandrum)</span></li>
+                    </ul>
+                </div>
+
+                <!-- Organizing Committee -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-gray-700 pb-2">Organizing Committee</h3>
+                    <div class="h-48 overflow-y-auto pr-2 custom-scrollbar text-sm text-gray-400 space-y-1">
+                        <p><strong>Dr. Nisha Thomas</strong> (Principal, St. John’s College)</p>
+                        <p><strong>Rev. Fr. Christy Cheruvila</strong> (Bursar)</p>
+                        <p><strong>Prof. S. M. A. Shibli</strong> (President, IAHEAM)</p>
+                        <p><strong>Lt. Dr. Arun P. S.</strong> (Convenor, HOD, Chemistry)</p>
+                        <p><strong>Dr. Suma M S</strong> (Co-Convenor, Principal, G.T.H.S.S.)</p>
+                        <p><strong>Dr. Sunesh S M</strong> (Co-Convenor, HSST Chemistry)</p>
+                        <p><strong>Ms. Remya R. G.</strong> (Coordinator, NVT Chemistry)</p>
+                        <p><strong>Ms. Simi Saju</strong> (Asst. Prof., Dept. Chemistry)</p>
+                        <p><strong>Dr. Thomas Mathew</strong> (Asst. Prof., Dept. Chemistry)</p>
+                        <p><strong>Dr. Niecy Elsa Mathews</strong> (Asst. Prof., Dept. Chemistry)</p>
+                        <p><strong>Dr. Liji John</strong> (Asst. Prof., Dept. Chemistry)</p>
+                        <p><strong>Dr. Vidya Vilas</strong> (Asst. Prof., Dept. Chemistry)</p>
+                        <p><strong>Dr. Sharow Geeth Vincent</strong> (Asst. Prof., Dept. Chemistry)</p>
+                        <p class="mt-2 text-xs italic text-gray-500">FYUGP S1, S3 & S5 Chemistry students, MSc S3 students and Ph.d. Scholars of Dept. Chemistry, St. John’s College, Anchal.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="text-center mt-8 pt-4 border-t border-gray-800 text-xs text-gray-500">
+                HEAM Parliamentarian 2026 | National-Level Competition
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+  </html>

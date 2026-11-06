@@ -57,7 +57,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto;
             color: #fff;
         }
         .quiz-badge {
@@ -98,14 +97,15 @@
             <div class="md:col-span-4 bg-gray-50 p-6 md:p-8 border-r border-gray-200">
                 <div class="text-center mb-8">
                     <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b pb-2">Organized By</h3>
-                    <img src="college.png" alt="St. John's College, Anchal Logo" class="h-14 mx-auto mb-4 drop-shadow-md object-contain">
-                    <p class="text-sm font-semibold text-gray-700">Department of Chemistry<br>&amp; Innovation and Start-up Club</p>
+                    <img src="university.png" alt="University of Kerala Logo" class="h-24 mx-auto mb-4 object-contain">
+                    <p class="text-sm font-semibold text-gray-700">Department of Chemistry & Centre for Renewable Energy<br>University of Kerala</p>
                 </div>
 
                 <div class="text-center mb-8">
                     <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b pb-2">In Association With</h3>
-                    <img src="university.png" alt="University of Kerala Logo" class="h-24 mx-auto mb-4 object-contain">
-                    <p class="text-sm font-semibold text-gray-700">Department of Chemistry & Centre for Renewable Energy<br>University of Kerala</p>
+                    <img src="college.png" alt="St. John's College, Anchal Logo" class="h-14 mx-auto mb-4 drop-shadow-md object-contain">
+                    <p class="text-sm font-semibold text-gray-700">Department of Chemistry<br>& Innovation and Start-up Club</p>
+                    <p class="text-sm font-semibold text-gray-700 mt-1">St. John’s College, Anchal</p>
                     
                     <div class="flex justify-center items-center gap-4 mt-6">
                         <span class="text-xl font-bold text-gray-400">&</span>
@@ -136,31 +136,24 @@
                     </p>
                 </div>
 
-                <!-- Competitions Grid -->
-                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center uppercase tracking-wide border-b-2 border-gray-200 inline-block px-4 pb-2 mx-auto w-full">Competitions</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-                    <!-- Quiz -->
-                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-md hover:shadow-xl transition relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 prize-badge text-xs font-bold px-2 py-1 rounded-bl-lg z-10">
-                            Prize: ₹2500
+                <!-- Competition (single box) -->
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center uppercase tracking-wide border-b-2 border-gray-200 inline-block px-4 pb-2 mx-auto w-full">Competition</h2>
+                <div class="mb-10">
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 pt-8 shadow-md hover:shadow-xl transition relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 prize-badge text-sm font-bold px-3 py-1 rounded-bl-lg z-10">
+                            Prize: ₹5000
                         </div>
-                        <div class="icon-badge quiz-badge mb-3 group-hover:scale-110 transition duration-300">
-                            <i class="fas fa-brain text-2xl"></i>
+                        <div class="flex justify-center items-center gap-4 mb-4">
+                            <div class="icon-badge quiz-badge group-hover:scale-110 transition duration-300">
+                                <i class="fas fa-brain text-2xl"></i>
+                            </div>
+                            <span class="text-2xl font-bold text-gray-400">&</span>
+                            <div class="icon-badge debate-badge group-hover:scale-110 transition duration-300">
+                                <i class="fas fa-gavel text-2xl"></i>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-bold text-center mb-2 text-gray-800">Quiz</h3>
-                        <p class="text-xs text-gray-600 text-center">Topic: Renewable energy sources (hydrogen, solar, wind, geothermal, biofuels) and Renewable Energy Sources Based Start-ups.</p>
-                    </div>
-
-                    <!-- Debate -->
-                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-md hover:shadow-xl transition relative overflow-hidden group">
-                         <div class="absolute top-0 right-0 prize-badge text-xs font-bold px-2 py-1 rounded-bl-lg z-10">
-                            Prize: ₹2500
-                        </div>
-                        <div class="icon-badge debate-badge mb-3 group-hover:scale-110 transition duration-300">
-                            <i class="fas fa-gavel text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-center mb-2 text-gray-800">Debate</h3>
-                        <p class="text-xs text-gray-600 text-center">Topic: Necessity of Hydrogen, Biofuels and other Renewable Energy Sources Based Start-ups in Indian Scenario.</p>
+                        <h3 class="text-2xl font-bold text-center mb-3 text-gray-800">Quiz and Debate</h3>
+                        <p class="text-sm text-gray-600 text-center">Topic: Renewable energy sources including hydrogen, solar, wind, geothermal, biofuels and Renewable Energy Sources Based Start-ups.</p>
                     </div>
                 </div>
 
@@ -180,8 +173,7 @@
                         <ul class="space-y-3">
                             <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:00 AM</span> <span>Registration</span></li>
                             <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:10 AM</span> <span><strong>Invited Talk:</strong> Career and Higher Education Opportunities after +2</span></li>
-                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:30 AM</span> <span>Quiz competition (09:30 AM – 10:30 AM)</span></li>
-                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">10:40 AM</span> <span><strong>Debate / Students Parliament</strong><br><em class="text-gray-600">(Chair: Dr. K. Anoop Krishnan, Scientist, NCESS Trivandrum)</em></span></li>
+                            <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">09:30 AM</span> <span><strong>Quiz and Debate / Students Parliament</strong> (09:30 AM – 12:00 PM)<br><em class="text-gray-600">(Chair: Dr. K. Anoop Krishnan, Scientist, NCESS Trivandrum)</em></span></li>
                             <li class="flex"><span class="font-bold w-20 flex-shrink-0 text-blue-800">12:00 PM</span> <span>Summary, Prize distribution</span></li>
                         </ul>
                     </div>
@@ -192,8 +184,7 @@
                     <h2 class="text-xl font-bold mb-3 text-gray-800"><i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>Please Note</h2>
                     <ul class="list-disc pl-5 text-gray-700 text-sm space-y-2 bg-orange-50 p-4 rounded-lg border border-orange-100">
                         <li>The participants must be exclusively from XI or XII (State, CBSE and ICSE).</li>
-                        <li>Only one team (of two students) is allowed from a school for each competition — a school cannot send two teams for the same competition.</li>
-                        <li>Schools may register the same team for all 2 competitions or send a separate team for each competition.</li>
+                        <li>Only one team (of two students) from one school is allowed.</li>
                         <li>Debaters must speak exclusively on the topic. Countering infeasible ideas with justification is allowed.</li>
                         <li>Winners adjudicated by juries will be named <strong>HEAM Parliamentarian 2026</strong>.</li>
                         <li>All participants will receive a participation certificate.</li>
@@ -237,21 +228,13 @@
                 <!-- Organizing Committee -->
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4 border-b border-gray-700 pb-2">Organizing Committee</h3>
-                    <div class="h-48 overflow-y-auto pr-2 custom-scrollbar text-sm text-gray-400 space-y-1">
+                    <div class="pr-2 text-sm text-gray-400 space-y-2">
                         <p><strong>Prof. S. M. A. Shibli</strong> (Director, Centre for Renewable Energy, University of Kerala)</p>
-                        <p><strong>Dr. Nisha Thomas</strong> (Principal, St. John’s College)</p>
-                        <p><strong>Rev. Fr. Christy Cheruvila</strong> (Bursar)</p>
-                        <p><strong>Lt. Dr. Arun P. S.</strong> (Convenor, HOD, Chemistry)</p>
-                        <p><strong>Dr. Suma M S</strong> (Co-Convenor, Principal, G.T.H.S.S.)</p>
-                        <p><strong>Dr. Sunesh S M</strong> (Co-Convenor, HSST Chemistry)</p>
-                        <p><strong>Ms. Remya R. G.</strong> (Coordinator, NVT Chemistry)</p>
-                        <p><strong>Dr. Simi Saju</strong> (Asst. Prof., Dept. Chemistry)</p>
-                        <p><strong>Dr. Thomas Mathew</strong> (Asst. Prof., Dept. Chemistry)</p>
-                        <p><strong>Dr. Niecy Elsa Mathews</strong> (Asst. Prof., Dept. Chemistry)</p>
-                        <p><strong>Dr. Liji John</strong> (Asst. Prof., Dept. Chemistry)</p>
-                        <p><strong>Dr. Vidya Vilas</strong> (Asst. Prof., Dept. Chemistry)</p>
-                        <p><strong>Dr. Sharow Geeth Vincent</strong> (Asst. Prof., Dept. Chemistry)</p>
-                        <p class="mt-2 text-xs italic text-gray-500">FYUGP S1, S3 & S5 Chemistry students, MSc S3 students and Ph.d. Scholars of Dept. Chemistry, St. John’s College, Anchal.</p>
+                        <p><strong>Dr. Ani Deepthi</strong> (HOD, Department of Chemistry, University of Kerala)</p>
+                        <p><strong>Dr. Nisha Thomas</strong> (Principal, St. John’s College, Anchal)</p>
+                        <p><strong>Rev. Fr. Christy Cheruvila</strong> (Bursar, St. John’s College, Anchal)</p>
+                        <p><strong>Dr. Suneesh C V</strong> (Assistant Professor, Department of Chemistry, University of Kerala)</p>
+                        <p><strong>Lt. Dr. Arun P. S.</strong> (Convenor)</p>
                     </div>
                 </div>
                 
@@ -265,5 +248,6 @@
 
 </body>
 </html>
+
 
 

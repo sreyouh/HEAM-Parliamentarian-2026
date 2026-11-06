@@ -67,6 +67,15 @@
             background: linear-gradient(135deg, #f87171, #b91c1c);
             box-shadow: 0 6px 16px rgba(220,38,38,0.4);
         }
+        /* Emblem animation */
+        .em-arm { transform-box: view-box; transform-origin: 60px 67px; animation: em-arm 1.1s ease-in-out infinite alternate; }
+        @keyframes em-arm { from { transform: rotate(10deg); } to { transform: rotate(-22deg); } }
+        .em-wave { opacity: 0; animation: em-wave 1.4s ease-out infinite; }
+        .em-wave-2 { animation-delay: .35s; }
+        @keyframes em-wave { 0% { opacity: 0; transform: translateX(3px); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateX(-4px); } }
+        .em-seats { animation: em-seats 2.6s ease-in-out infinite; }
+        @keyframes em-seats { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+        @media (prefers-reduced-motion: reduce) { .em-arm, .em-wave, .em-seats { animation: none; } .em-wave { opacity: 1; } }
     </style>
 </head>
 <body class="p-4 md:p-8 flex justify-center items-center min-h-screen">
@@ -143,14 +152,55 @@
                         <div class="absolute top-0 right-0 prize-badge text-sm font-bold px-3 py-1 rounded-bl-lg z-10">
                             Prize: ₹5000
                         </div>
-                        <div class="flex justify-center items-center gap-4 mb-4">
-                            <div class="icon-badge quiz-badge group-hover:scale-110 transition duration-300">
-                                <i class="fas fa-brain text-2xl"></i>
-                            </div>
-                            <span class="text-2xl font-bold text-gray-400">&</span>
-                            <div class="icon-badge debate-badge group-hover:scale-110 transition duration-300">
-                                <i class="fas fa-gavel text-2xl"></i>
-                            </div>
+                        <!-- Mini animated logo: a debater holding a pen in front of a parliament half-circle -->
+                        <div class="flex justify-center mb-3">
+                            <svg viewBox="0 0 100 100" class="w-24 h-24 drop-shadow-lg" role="img" aria-label="Debater with a pen in front of a parliament half-circle: Quiz and Debate">
+                                <defs>
+                                    <linearGradient id="emBg" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#1e3a8a"/>
+                                        <stop offset="100%" stop-color="#2563eb"/>
+                                    </linearGradient>
+                                    <clipPath id="emClip"><circle cx="50" cy="50" r="46"/></clipPath>
+                                </defs>
+
+                                <circle cx="50" cy="50" r="48" fill="#fbbf24"/>
+                                <circle cx="50" cy="50" r="46" fill="url(#emBg)"/>
+
+                                <g clip-path="url(#emClip)">
+                                    <!-- Parliament half-circle (seats) -->
+                                    <g class="em-seats" fill="none" stroke-linecap="round" stroke-width="3.5">
+                                        <path d="M12 84 A38 38 0 0 1 88 84" stroke="#93c5fd" stroke-dasharray="0.1 7.2"/>
+                                        <path d="M20 84 A30 30 0 0 1 80 84" stroke="#fbbf24" stroke-dasharray="0.1 6.6"/>
+                                    </g>
+
+                                    <!-- Speaker: body -->
+                                    <path d="M33 96 Q33 61 50 61 Q67 61 67 96 Z" fill="#fff"/>
+                                    <!-- Head -->
+                                    <circle cx="50" cy="50" r="8" fill="#fde68a"/>
+                                    <!-- Mouth (talking) -->
+                                    <ellipse cx="50" cy="53.5" rx="2.6" ry="1" fill="#1e3a8a">
+                                        <animate attributeName="ry" values="1;2.6;1;2;1" dur="0.7s" repeatCount="indefinite"/>
+                                    </ellipse>
+                                    <!-- Eyes -->
+                                    <circle cx="46.7" cy="48" r="1" fill="#1e3a8a"/>
+                                    <circle cx="53.3" cy="48" r="1" fill="#1e3a8a"/>
+
+                                    <!-- Raised arm holding a pen -->
+                                    <g class="em-arm">
+                                        <line x1="60" y1="67" x2="73" y2="56" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+                                        <circle cx="73" cy="55" r="3.4" fill="#fde68a"/>
+                                        <g transform="rotate(-12 73 55)">
+                                            <rect x="70.8" y="34" width="4.4" height="23" rx="1.4" fill="#fbbf24"/>
+                                            <rect x="70.8" y="34" width="4.4" height="4" rx="1.2" fill="#f59e0b"/>
+                                            <polygon points="70.8,34 75.2,34 73,27" fill="#0f172a"/>
+                                        </g>
+                                    </g>
+
+                                    <!-- Voice waves -->
+                                    <path class="em-wave" d="M38 44 Q34 50 38 56" fill="none" stroke="#fde68a" stroke-width="2" stroke-linecap="round"/>
+                                    <path class="em-wave em-wave-2" d="M32 40 Q26 50 32 60" fill="none" stroke="#fde68a" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
                         </div>
                         <h3 class="text-2xl font-bold text-center mb-3 text-gray-800">Quiz and Debate</h3>
                         <p class="text-sm text-gray-600 text-center">Topic: Renewable energy sources including hydrogen, solar, wind, geothermal, biofuels and Renewable Energy Sources Based Start-ups.</p>
@@ -248,6 +298,7 @@
 
 </body>
 </html>
+
 
 
 

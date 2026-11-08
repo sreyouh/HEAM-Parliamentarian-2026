@@ -49,6 +49,29 @@
             50% { box-shadow: 0 0 14px rgba(255,193,7,0.9), 0 0 28px rgba(255,193,7,0.5); }
         }
 
+        /* Large golden prize banner (sits inside the card flow) */
+        .prize-badge-xl {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto 1.25rem auto;
+            padding: 0.6rem 1.75rem;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 2.25rem;
+            line-height: 1.15;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            border-width: 2px;
+            animation: prize-shine 3.5s linear infinite, prize-pulse-xl 2s ease-in-out infinite;
+        }
+        .prize-badge-xl .prize-label { display: block; font-size: 0.8rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 700; }
+        @media (min-width: 768px) { .prize-badge-xl { font-size: 3rem; } }
+        @keyframes prize-pulse-xl {
+            0%, 100% { box-shadow: 0 0 14px rgba(255,193,7,0.65), 0 0 34px rgba(255,193,7,0.35), 0 0 60px rgba(255,170,0,0.2); }
+            50% { box-shadow: 0 0 26px rgba(255,200,40,1), 0 0 56px rgba(255,193,7,0.7), 0 0 96px rgba(255,170,0,0.45); }
+        }
+
         /* Stylish icon badges for competitions */
         .icon-badge {
             width: 68px;
@@ -87,7 +110,7 @@
             <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
             
             <div class="relative z-10 flex flex-col items-center">
-                <p class="text-sm md:text-base font-semibold tracking-widest uppercase mb-2 text-blue-200">National-Level Competition for XI & XII Students</p>
+                <p class="text-sm md:text-base font-semibold tracking-widest uppercase mb-2 text-blue-200">A National-Level Competition for XI & XII Students</p>
                 <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">HEAM PARLIAMENTARIAN 2026</h1>
                 
                 <div class="bg-white text-blue-900 px-6 py-3 rounded-full font-bold text-lg md:text-xl shadow-lg mt-4 inline-block transform hover:scale-105 transition duration-300">
@@ -107,7 +130,7 @@
                 <div class="text-center mb-8">
                     <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b pb-2">Organized By</h3>
                     <img src="university.png" alt="University of Kerala Logo" class="h-24 mx-auto mb-4 object-contain">
-                    <p class="text-sm font-semibold text-gray-700">Department of Chemistry & Centre for Renewable Energy<br>University of Kerala</p>
+                    <p class="text-sm font-semibold text-gray-700">Centre for Renewable Energy & Department of Chemistry<br>University of Kerala</p>
                 </div>
 
                 <div class="text-center mb-8">
@@ -138,7 +161,7 @@
                 <div class="mb-10 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg shadow-sm">
                     <h2 class="text-2xl font-bold mb-3 text-blue-900"><i class="fas fa-info-circle mr-2"></i>About the Event</h2>
                     <p class="text-gray-700 text-lg leading-relaxed font-semibold">
-                        A dynamic competition to create awareness about the <span class="text-blue-600">Necessity of Hydrogen, biofuels, and other renewable energy sources-based start-ups</span> in the Indian Scenario.
+                        There will be a one-hour open common debate competition followed by a quiz competition on <span class="text-blue-600">the necessity of hydrogen and other renewable energy sources for sustainable development in India, and the necessity of implementing competitive indigenous AI models and start-ups for a renewable energy revolution in India by 2030.</span>
                     </p>
                     <p class="mt-4 text-sm text-gray-600 italic">
                         <strong>Exclusively for school students studying in XI or XII (State, CBSE and ICSE).</strong>
@@ -149,8 +172,9 @@
                 <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center uppercase tracking-wide border-b-2 border-gray-200 inline-block px-4 pb-2 mx-auto w-full">Competition</h2>
                 <div class="mb-10">
                     <div class="bg-white border border-gray-200 rounded-xl p-6 pt-8 shadow-md hover:shadow-xl transition relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 prize-badge text-sm font-bold px-3 py-1 rounded-bl-lg z-10">
-                            Prize: ₹10000
+                        <div class="prize-badge prize-badge-xl z-10">
+                            <span class="prize-label"><i class="fas fa-trophy mr-2"></i>Prize</span>
+                            ₹10000
                         </div>
                         <!-- Mini animated logo: a debater holding a pen in front of a parliament half-circle -->
                         <div class="flex justify-center mb-3">
@@ -210,7 +234,7 @@
                 <!-- Registration Banner -->
                  <div class="bg-gradient-to-r from-green-500 to-emerald-600 p-6 rounded-xl shadow-lg text-white text-center mb-10 transform hover:-translate-y-1 transition duration-300">
                     <h3 class="text-2xl font-bold mb-2">Register Now!</h3>
-                    <p class="mb-4">No Registration Fee. Deadline: <span class="font-bold underline text-yellow-300">12 November 2026</span></p>
+                    <p class="mb-4">No Registration Fee. Deadline: <span class="font-bold underline text-yellow-300">16 November 2026, 05:00 PM</span></p>
                     <a href="https://forms.gle/CN7VcgT1U71gAPm29" target="_blank" class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
                         <i class="fas fa-link mr-2"></i> Click Here for Registration Form
                     </a>
@@ -285,6 +309,16 @@
                         <p><strong>Rev. Fr. Christy Cheruvila</strong> (Bursar, St. John’s College, Anchal)</p>
                         <p><strong>Dr. Suneesh C V</strong> (Assistant Professor, Department of Chemistry, University of Kerala)</p>
                         <p><strong>Lt. Dr. Arun P. S.</strong> (Convenor)</p>
+                        <p><strong>Ms. Remya R G</strong> (Co-Convenor)</p>
+                        <p><strong>Dr. Sunesh S M</strong> (Co-Convenor)</p>
+                        <p><strong>Dr. Suma M S</strong> (Co-Convenor)</p>
+                        <p><strong>Mr. Sreehari S</strong> (Student Coordinator)</p>
+                        <p><strong>Dr. Thomas Mathew</strong></p>
+                        <p><strong>Dr. Simi Saju</strong></p>
+                        <p><strong>Dr. Niecy Elsa Mathews</strong></p>
+                        <p><strong>Dr. Liji John</strong></p>
+                        <p><strong>Dr. Vidya Vilas</strong></p>
+                        <p><strong>Dr. Sharow Geeth Vincent</strong></p>
                     </div>
                 </div>
                 
@@ -298,6 +332,16 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 
